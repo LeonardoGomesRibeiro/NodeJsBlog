@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  form(name='saveBlogFrm', action='/blogs/save', method='post')
+   b  Title 
+   input(type='text', name='blogTitle') 
+   br
+   b  Body 
+   input(type='text', name='blogBody') 
+   br
+   b  Author 
+   input(type='text', name='blogAuthor') 
+   br
+   input(type='submit', name='saveBlog', value='Save')
+    
