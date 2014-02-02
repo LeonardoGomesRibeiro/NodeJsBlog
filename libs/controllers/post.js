@@ -1,4 +1,4 @@
-var blog = require('../models/blog');
+var posts = require('../models/post');
 
 /**
  * Save the object.
@@ -6,13 +6,13 @@ var blog = require('../models/blog');
 this.save = function(b, callback) {
 	
 	var success = true;
-	b.save(function(err, savedBlog, numberAffected) {
+	b.save(function(err, savedPost, numberAffected) {
 		if (err) {
 			var errorMessages = err.errors;
 			console.log(errorMessages);
 			success = errorMessages;
 		} else {
-			success = savedBlog;
+			success = savedPost;
 		}
 		callback(success);
 	});
@@ -21,7 +21,7 @@ this.save = function(b, callback) {
 };
 
 this.findAll = function(callback) {
-	blog.find({}, function(err, blogs) {
-		callback(blogs);
+	posts.find({}, function(err, post) {
+		callback(post);
 	});
 };

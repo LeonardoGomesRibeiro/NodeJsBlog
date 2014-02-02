@@ -1,5 +1,5 @@
 # Blog
-Project intended to be a simple blog.
+Project intended to be a simple blog. On it we will be able to register a post, list posts, remove posts and update posts.
 
 ## Objective
 To get knowledge on the technologies used on the project. 
@@ -9,7 +9,7 @@ ALWAYS CREATE YOUR OWN FORK. NEVER PUSH TO MAIN REPO!!!
 Clone the git repo - `https://github.com/LeonardoGomesRibeiro/NodeJsBlog.git` - or [download it](https://github.com/LeonardoGomesRibeiro/NodeJsBlog.git)
 
 ## Developing
-* Blog CRUD (under dev)
+* Post CRUD (under dev)
 
 ### Tools
 Using Aptana Studio 3 IDE to develop

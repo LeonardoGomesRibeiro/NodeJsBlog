@@ -6,7 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
-  , blog = require('./routes/blog')
+  , post = require('./routes/post')
   , http = require('http')
   , path = require('path');
 
@@ -34,9 +34,9 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 
-app.get('/blogs/createBlog', blog.index);
-app.post('/blogs/save', blog.save);
-app.get('/blogs', blog.list);
+app.get('/posts/createPost', post.index);
+app.post('/posts/save', post.save);
+app.get('/blogs', post.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
