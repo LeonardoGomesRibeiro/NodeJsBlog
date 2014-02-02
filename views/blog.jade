@@ -1,18 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  
-  form(name='saveBlogFrm', action='/blogs/save', method='post')
-   b  Title 
-   input(type='text', name='blogTitle') 
-   br
-   b  Body 
-   textarea(form='saveBlogFrm', name='blogBody') 
-   br
-   b  Author 
-   input(type='text', name='blogAuthor') 
-   br
-   input(type='submit', name='saveBlog', value='Save')
-    
+  div.container
+    form(name='saveBlogFrm', action='/blogs/save', method='post')
+      fieldset
+        legend Type your post
+        label Post title
+        input(type='text', placeholder='Post title' name='blogTitle')
+        label Post body
+        textarea(id='postBody',name='blogBody')
+        label Author
+        input(type='text', placeholder='Author', name='blogAuthor')
+        p
+         input.btn(type='submit', value='Create Post')    

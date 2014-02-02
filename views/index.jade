@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+    form(id='createPostForm', action='', method='post')
+      fieldset
+        legend Type your post
+        label Post title
+        input(type='text', placeholder='Post title')
+        label Post body
+        textarea(id='postBody')
+        label Author
+        input(type='text', placeholder='Author', name='blogAuthor')
+        p
+         input.btn(type='submit', value='Create Post')
