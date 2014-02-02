@@ -4,7 +4,7 @@
 	
 var mongoose = require('mongoose');
 
-blogSchema = mongoose.Schema({
+postSchema = mongoose.Schema({
 	title: String,
 	body: String,
 	author: String,
@@ -12,4 +12,4 @@ blogSchema = mongoose.Schema({
 });
 
 
-module.exports = mongoose.model('Blog', blogSchema);
+module.exports = mongoose.model('Post', postSchema);

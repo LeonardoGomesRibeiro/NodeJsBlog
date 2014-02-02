@@ -1,15 +1,7 @@
 extends layout
 
 block content
-  div.container
-    form(id='createPostForm', action='', method='post')
-      fieldset
-        legend Type your post
-        label Post title
-        input(type='text', placeholder='Post title')
-        label Post body
-        textarea(id='postBody')
-        label Author
-        input(type='text', placeholder='Author', name='blogAuthor')
-        p
-         input.btn(type='submit', value='Create Post')
+  h1 Welcome to the post listing!!
+  form(action='/posts/createPost')
+    p
+      input(id='createNewPost', class='btn btn-small btn-primary', type='submit', value='Create New Post')
