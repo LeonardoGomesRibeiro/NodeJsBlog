@@ -12,6 +12,8 @@ exports.save = function(req, res) {
 	posts.body = req.body.blogBody;
 	posts.author = req.body.blogAuthor;
 	posts.create_date = new Date();
+	if (req.body.blogTags)
+		posts.tags = req.body.blogTags.split(',');
 	
 	postController.save(posts, function(success) {
 		res.send(success);
