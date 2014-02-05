@@ -26,7 +26,7 @@ exports.save = function(req, res) {
 
 exports.list = function(req, res) {
 	//res.send("will list the blog.");
-	blogController.findAll(function(posts) {
-		res.send(posts);
+	postController.findAll(function(posts) {
+		res.render('list-post', {posts: {postsArray: posts}});
 	});
 };

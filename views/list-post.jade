@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  table(class='table table-condensed')
+    thead
+     tr
+      th Post Title
+    tbody
+	each val,index in posts.postsArray
+     tr
+      td #{val.title}
