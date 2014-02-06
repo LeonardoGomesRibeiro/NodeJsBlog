@@ -16,7 +16,7 @@ exports.save = function(req, res) {
 		posts.tags = req.body.blogTags.split(',');
 	
 	postController.save(posts, function(success) {
-		res.send(success);
+		exports.list(req, res);
 	});
 };
 
