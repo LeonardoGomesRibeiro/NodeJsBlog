@@ -21,9 +21,14 @@ Using Aptana Studio 3 IDE to develop
 * [Express](http://expressjs.com/)
 
 ### To run the application
-1 - Install mongodb on your local machine
-2 - Install nodejs on your local machine
-3 - Fork/Download the project for your local machine
-4 - Enter on the terminal window and go to the path where you forked this app.
-5 - Run: `npm install` this will install all the dependencies needed to run the project.
-6 - Test the application accessing: (http://localhost:3000)  
+* Install mongodb on your local machine
+
+* Install nodejs on your local machine
+
+* Fork/Download the project for your local machine
+
+* Enter on the terminal window and go to the path where you forked this app.
+
+* Run: `npm install` this will install all the dependencies needed to run the project.
+
+* Test the application accessing: (http://localhost:3000)  
